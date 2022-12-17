@@ -1,0 +1,32 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/BojanDukovski/FOAF/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <http://njh.me/#me> ;
+  foaf:primaryTopic <http://njh.me/#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/BojanDukovski/FOAF/main/foaf.ttl>
+  a foaf:Person ;
+  foaf:name "Bojan Dukovski" ;
+  foaf:title "Student" ;
+  foaf:givenname "Bojan" ;
+  foaf:family_name "Dukovski" ;
+  foaf:mbox_sha1sum "4c256883156bb522b0d24bfb04d25a12da60f95e" ;
+  foaf:homepage <http://njh.me/bojan.dukovski.herokuapp.com> ;
+  foaf:workplaceHomepage <https://www.iwconnect.com> ;
+  foaf:schoolHomepage <https://www.finki.ukim.mk> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Viktor Meglenovski" ;
+    foaf:mbox_sha1sum "71c1e1f0b470d851e794c28ea11358890c90b412" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/viktor-meglenovski/VBS-FOAF/main/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Milos Jovanovikj" ;
+    foaf:mbox_sha1sum "ab65e252317d3401ccab837eaae13bd37378b844" ;
+    rdfs:seeAlso <http://mjovanovik.com/foaf.ttl>
+  ] .
